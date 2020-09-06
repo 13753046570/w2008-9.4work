@@ -1,0 +1,753 @@
+*{
+    list-style: none;
+    padding:0;
+    margin:0
+}
+
+/* 超小屏 */
+    header{
+        width: 100%;
+        height: 50px;
+        background: #222; 
+        float: left;
+    }
+    .logo .l{
+        height: 100%;
+        float: left;
+        padding: 0 15px;
+    }
+    .l a{
+        line-height: 50px;
+        color: #9d9d9d;
+        font-size: 18px;
+    }
+    header .head{
+        display: none;
+    }
+    .logo .r{
+        width: 44px;
+        height: 34px;
+        padding: 9px 10px;
+        border: 1px solid #333;
+        float: right; 
+        margin: 8px 15px 8px 0; 
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .r i{
+        color: #fff;
+        font-size: 21px;
+        line-height: 10px;
+    }
+    .logo .r:hover{
+        background: rgb(239, 239, 239,0.1);
+    }
+    .logo a{
+        text-decoration: none;
+    }
+    .logo a:hover{
+        color: #fff;
+    }
+    .nave{
+        width: 100%;
+        height: 303.5px;
+        float: left;
+        border-top: 1px solid gray;
+        background: #222;
+    }
+    .nave li{
+        height: 40px;
+        padding: 0 15px;
+    }
+    .nave li a{
+        color: #9d9d9d;
+        font-size: 14px;
+    }
+    .nave li:nth-child(1){
+        margin-top: 15px;
+    }
+    .nave li:nth-child(7){
+        padding: 10px 15px;
+    }
+    .nave li:hover a{
+        color: #fff;
+    }
+    .nave{
+        visibility: hidden;
+    }
+    .logo .r:hover + .nave{
+        visibility: visible;
+    }
+  /* 大图开始 */
+  .jumbotron{
+    width: 100%;
+    height: 365px;
+    /* float: left; */
+    background: linear-gradient(45deg,#020031,#6d3353);
+    padding-top: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container{
+    height: 279px;
+    text-align: center;
+    color: #fff;
+}
+.container h1{
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -2px;
+    font-weight: 700;
+}
+.container h2{
+    font-size: 18px;
+    font-weight: 200;
+}
+.container p{
+    width: 290px;
+    height: 54px;
+    margin: 30px auto 15px;
+    background: #337ab7;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.25;
+    border-radius: 5px;
+    box-shadow: inset 0 -4px 0 #23527c;
+}
+.container p a{
+    color: #fff;
+    line-height: 54px;
+    text-decoration: none;
+}
+.container i a{
+    font-size: 14px;
+    color: #ffffff80;
+    font-style:normal
+}
+.container p:hover{
+    background: #2e6da4;
+}
+.container i a:hover{
+    color: #fff;
+}
+/* 大图结束 */
+    /* 相关开始 */
+    .project{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .project-header{
+        height: 95.6px;
+        width: 60%;
+        border-bottom: 1px solid #eee;
+        box-sizing: border-box;
+        margin: 60px auto 40px;
+        text-align: center;
+    }
+    .project-header h2{
+        color: #333;
+        font-size: 30px;
+        margin-top: -3px;
+    }
+    .project-header p{
+        color: #333;
+        font-size: 14px;
+    }
+    /* 相关结束 */
+        /* 堆图开始 */
+        .row div{
+            width: 100%;
+            height: 367px;
+            padding: 0 15px;
+            font-size: 14px;
+            margin: 0 auto 15px;
+        }
+        .row .thum{
+            width: 300px;
+            height: 350px;
+            border: 1px solid #ddd;
+            padding: 4px;
+        }
+        .thum a{
+            display: block;
+        }
+        .thum img{
+            width: 100%;
+            height: 100%;
+        }
+        .thum .caption{
+            width: 252.5px;
+            height: 191px;
+            padding: 9px;
+            color: #555;
+        }
+        .caption h3{
+            width: 234.5px;
+            height: 52.8px;
+            text-align: center;
+        }
+        .caption h3 a{
+            width: 133.51px;
+            height: 52.8px;
+            margin: 0 auto;
+            color: #337ab7;
+            text-decoration: none;
+        }
+        .caption a:hover{
+            color: #23527c;
+        }
+        .caption p{
+            text-align: center;
+        }
+        /* 堆图结束 */
+            /* 返回箭头开始 */
+    .scro{
+        background-color: #777;
+        color: #eee;
+        line-height: 1;
+        text-align: center;
+        text-decoration: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        overflow: hidden;
+        width: 46px;
+        height: 46px;
+        border: none;
+    }
+    .scro:hover{
+        background: #333;
+    }
+    .scro i{
+        font-size: 25px;
+        line-height: 46px;
+    }
+    /* 返回箭头结束 */
+    .footer{
+        display: none;
+    }
+
+/* 小屏 */
+@media screen and (min-width:768px){
+    .logo{
+        display: none;
+    }
+    .nave{
+        display: none;
+    }
+    header{
+        width: 100%;
+        height: 42px;
+        background: #222;
+        float: left;
+    }
+    header .head{
+        display: block;
+    }
+    .er{
+        height: 100%;
+        float: left;
+        padding: 0 15px;
+        display: none;
+    }
+    .er a{
+        line-height: 42px;
+        color: #9d9d9d;
+        font-size: 18px;
+    }
+    .head{
+        width: 690px;
+        height: 100%;
+        /* background: red; */
+        margin: 0 auto;
+    }
+    .head li{
+        height: 100%;
+        /* background-color: salmon; */
+        float: left;
+        padding: 0 15px 0 15px;
+        line-height: 42px;
+    }
+    .head li a{
+        color: #9d9d9d;
+        font-size: 14px;
+    }
+    .head li:nth-child(1){
+        display: none;
+    }
+    .yu{
+        float: right;
+        padding: 11px 15px;
+        display: none;
+    }
+    .yu a{
+        color: #9d9d9d;
+    }
+    .head a{
+        text-decoration: none;
+    }
+    .head a:hover{
+        color: #fff;
+    }
+      /* 大图开始 */
+      .jumbotron{
+        width: 100%;
+        height: 477px;
+        /* float: left; */
+        background: linear-gradient(45deg,#020031,#6d3353);
+        padding: 80px 0 110px 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+    .container{
+        height: 297px;
+        text-align: center;
+        color: #fff;
+    }
+    .container h1{
+        font-size: 90px;
+        line-height: 1;
+        letter-spacing: -2px;
+        font-weight: 700;
+    }
+    .container h2{
+        font-size: 24px;
+        font-weight: 200;
+    }
+    .container p{
+        width: 290px;
+        height: 54px;
+        margin: 30px auto 15px;
+        background: #337ab7;
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 1.25;
+        border-radius: 5px;
+        box-shadow: inset 0 -4px 0 #23527c;
+    }
+    .container p a{
+        color: #fff;
+        line-height: 54px;
+        text-decoration: none;
+    }
+    .container i a{
+        font-size: 14px;
+        color: #ffffff80;
+        font-style:normal
+    }
+    .container p:hover{
+        background: #2e6da4;
+    }
+    .container i a:hover{
+        color: #fff;
+    }
+    /* 大图结束 */
+        /* 相关开始 */
+        .project{
+            width: 720px;
+            margin: 0 auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        .project-header{
+            height: 161px;
+            width: 60%;
+            border-bottom: 1px solid #eee;
+            box-sizing: border-box;
+            margin: 60px auto 40px;
+            text-align: center;
+        }
+        .project-header h2{
+            color: #333;
+            font-size: 42px;
+            margin-top: -3px;
+        }
+        .project-header p{
+            color: #333;
+            font-size: 14px;
+        }
+        /* 相关结束 */
+            /* 堆图开始 */
+    .row div{
+        width: 50%;
+        height: 367px;
+        padding: 0 15px;
+        font-size: 14px;
+    }
+    .row .thum{
+        width: 300px;
+        height: 350px;
+        border: 1px solid #ddd;
+        padding: 4px;
+    }
+    .thum img{
+        width: 100%;
+        height: 100%;
+    }
+    .thum .caption{
+        width: 252.5px;
+        height: 191px;
+        padding: 9px;
+        color: #555;
+    }
+    .caption h3{
+        width: 234.5px;
+        height: 52.8px;
+        text-align: center;
+    }
+    .caption h3 a{
+        width: 133.51px;
+        height: 52.8px;
+        margin: 0 auto;
+        color: #337ab7;
+        text-decoration: none;
+    }
+    .caption a:hover{
+        color: #23527c;
+    }
+    .caption p{
+        text-align: center;
+    }
+    /* 堆图结束 */
+    
+}
+/* 中屏 */
+@media screen and (min-width:992px){
+    .er{
+        display: block;
+    }
+    header{
+        width: 100%;
+        height: 42px;
+        background: #222;
+    }
+    .head{
+        width: 992px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .head li{
+        height: 100%;
+        float: left;
+        padding: 0 15px 0 15px;
+        line-height: 42px;
+    }
+    .head li a{
+        color: #9d9d9d;
+        font-size: 14px;
+    }
+    .yu{
+        float: right;
+        padding: 11px 15px;
+        display: block;
+    }
+    .yu a{
+        color: #9d9d9d;
+
+    }
+           /* 大图开始 */
+           .jumbotron{
+            width: 100%;
+            height: 497px;
+            /* float: left; */
+            background: linear-gradient(45deg,#020031,#6d3353);
+            padding: 80px 0 110px 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 297px;
+            text-align: center;
+            color: #fff;
+        }
+        .container h1{
+            font-size: 100px;
+            line-height: 1;
+            letter-spacing: -2px;
+            font-weight: 700;
+        }
+        .container h2{
+            font-size: 30px;
+            font-weight: 200;
+        }
+        .container p{
+            width: 290px;
+            height: 54px;
+            margin: 30px auto 15px;
+            background: #337ab7;
+            font-size: 18px;
+            font-weight: 200;
+            line-height: 1.25;
+            border-radius: 5px;
+            box-shadow: inset 0 -4px 0 #23527c;
+        }
+        .container p a{
+            color: #fff;
+            line-height: 54px;
+            text-decoration: none;
+        }
+        .container i a{
+            font-size: 14px;
+            color: #ffffff80;
+            font-style:normal
+        }
+        .container p:hover{
+            background: #2e6da4;
+        }
+        .container i a:hover{
+            color: #fff;
+        }
+        /* 大图结束 */
+            /* 相关开始 */
+   .project{
+    width: 970px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.project-header{
+    height: 95.6px;
+    width: 60%;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    margin: 60px auto 40px;
+    text-align: center;
+}
+.project-header h2{
+    color: #333;
+    font-size: 42px;
+    margin-top: -3px;
+}
+.project-header p{
+    color: #333;
+    font-size: 14px;
+}
+/* 相关结束 */
+           /* 堆图开始 */
+
+           .row div{
+            width: 33.333333%;
+            height: 367px;
+            padding: 0 15px;
+            font-size: 14px;
+            float: left;
+            margin-bottom: 8px;
+        }
+        .row .thum{
+            width: 283px;
+            height: 342px;
+            border: 1px solid #ddd;
+            padding: 4px;
+        }
+        .thum img{
+            width: 100%;
+            height: 100%;
+        }
+        .thum .caption{
+            width: 252.5px;
+            height: 191px;
+            padding: 9px;
+            color: #555;
+        }
+        .caption h3{
+            width: 234.5px;
+            height: 52.8px;
+            text-align: center;
+        }
+        .caption h3 a{
+            width: 133.51px;
+            height: 52.8px;
+            margin: 0 auto;
+            color: #337ab7;
+            text-decoration: none;
+        }
+        .caption a:hover{
+            color: #23527c;
+        }
+        .caption p{
+            text-align: center;
+        }
+        /* 堆图结束 */
+            /* 返回箭头开始 */
+    .scro{
+        background-color: #777;
+        color: #eee;
+        line-height: 1;
+        text-align: center;
+        text-decoration: none;
+        position: fixed;
+        bottom: 100px;
+        right: 20px;
+        overflow: hidden;
+        width: 46px;
+        height: 46px;
+        border: none;
+    }
+    .scro:hover{
+        background: #333;
+    }
+    .scro i{
+        font-size: 25px;
+        line-height: 46px;
+    }
+    /* 返回箭头结束 */
+
+}
+/* 大屏 */
+@media screen and (min-width: 1200px){
+    .head{
+        width: 1140px;
+    }
+    /* 相关开始 */
+    .project{
+        width: 1200px;
+    }
+    /* 相关结束 */
+    /* 堆图开始 */
+    .row div{
+        width: 25%;
+        height: 367px;
+        padding: 0 15px;
+        font-size: 14px;
+        margin-bottom: -6px;
+    }
+    .row .thum{
+        width: 262.5px;
+        height: 327px;
+        border: 1px solid #ddd;
+        padding: 4px;
+    }
+    .thum a{
+        display: block;
+        width: 252.5px;
+        height: 126.25px;
+    }
+    .thum img{
+        width: 100%;
+        height: 100%;
+    }
+    .thum .caption{
+        width: 252.5px;
+        height: 191px;
+        padding: 9px;
+        color: #555;
+    }
+    .caption h3{
+        width: 234.5px;
+        height: 52.8px;
+        text-align: center;
+    }
+    .caption h3 a{
+        width: 133.51px;
+        height: 52.8px;
+        margin: 0 auto;
+        color: #337ab7;
+        text-decoration: none;
+    }
+    .caption a:hover{
+        color: #23527c;
+    }
+    .caption p{
+        text-align: center;
+    }
+    /* 堆图结束 */
+    /* 返回箭头开始 */
+    .scro{
+        background-color: #777;
+        color: #eee;
+        line-height: 1;
+        text-align: center;
+        text-decoration: none;
+        position: fixed;
+        bottom: 100px;
+        right: 20px;
+        overflow: hidden;
+        width: 46px;
+        height: 46px;
+        border: none;
+    }
+    .scro:hover{
+        background: #333;
+    }
+    .scro i{
+        font-size: 25px;
+        line-height: 46px;
+    }
+    /* 返回箭头结束 */
+    /* 底部开始 */
+    .footer{
+        width: 100%;
+        height: 189.4px;
+        padding: 30px 0;
+        border-top: 1px solid #e5e5e5;
+        margin-top: 70px;
+        display: block;
+    }
+    .footer-box{
+        width: 1170px;
+        height: 189.4px;
+        padding: 0 15px;
+        margin: 0 auto;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .footer-top{
+        width: 1170px;
+        height: 120px;
+    }
+    .footer-top div:nth-child(1){
+        width: 555px;
+        height: 83px;
+        padding: 0 15px;
+        float: left;
+        color: #777;
+    }
+    .footer-top div:nth-child(2){
+        width: 555px;
+        height: 120px;
+        padding: 0 15px;
+        /* float: right; */
+    }
+    .footer-top .about>div{
+        width: 126.25px;
+        height: 110px;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .about h4{
+        color: #563D7C;
+        font-size: 16px;
+    }
+    .about a{
+        color: #777;
+    }
+    hr{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-top: 1px solid #eee;
+    }
+    .footer-bottom{
+        width: 1170px;
+        height: 28.4px;
+    }
+    .footer-bottom ul{
+        height: 18.4px;
+        text-align: center;
+    }
+    .footer-bottom li{
+        color: #777;
+        margin: 0 auto;
+        display: inline;
+        font-size: 13px;
+    }
+    .footer-bottom li a{
+        color: #777;
+    }
+    .footer-bottom ul>li+li::before{
+        padding: 0 10px;
+        color: #ccc;
+        content: "|";
+    }
+    /* 底部结束 */
+}
